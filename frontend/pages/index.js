@@ -33,8 +33,8 @@ export default function HomeScreen() {
             password: values.senha,
           })
           .then(() => {
-            router.push('/auth-page-static');
-            // router.push('/auth-page-ssr');
+            // router.push('/auth-page-static');
+            router.push('/auth-page-ssr');
           })
           .catch((err) => {
             console.log(err);
@@ -57,6 +57,10 @@ export default function HomeScreen() {
             Entrar
           </button>
         </div>
+        <p>
+          <a href="/auth-page-ssr">auth-page-ssr</a>
+          <a href="/auth-page-static">auth-page-static</a>
+        </p>
       </form>
     </div>
   );
